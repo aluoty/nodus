@@ -1,11 +1,29 @@
 # nodus
-This is a lightweight file manager that lives in the terminal, built using C.
-Run by:
+
+A lightweight terminal file manager in plain C — no dependencies.
+
 ```bash
 make
-./nodus
+./build/nodus
 ```
-Clean by:
+
+## Keys
+
+| Key | Action |
+|-----|--------|
+| `j` / `k` / ↑ / ↓ | Move selection |
+| `Enter` | Enter directory / open file |
+| `h` / `Backspace` | Go to parent directory |
+| `g` / `G` | Jump to top / bottom |
+| `/` | Filter by name |
+| `.` | Toggle hidden files |
+| `n` | Create new directory |
+| `r` | Refresh listing |
+| `Esc` | Clear active filter |
+| `q` | Quit |
+
+Directories are blue, executables green. The status bar shows size and permissions for the selected entry.
+
 ```bash
 make clean
 ```
